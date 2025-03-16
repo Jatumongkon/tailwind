@@ -1,0 +1,10 @@
+@import "tailwindcss";
+/* @tailwind base;
+@tailwind components; */
+@tailwind utilities;
+
+.radial-blure {
+    background: radial-gradient(lightyellow, skyblue);
+
+}
+
