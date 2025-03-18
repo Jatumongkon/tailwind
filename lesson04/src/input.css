@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@layer utilities {
+    .section-min-height {
+        min-height: calc(100vh - 68px)
+    }
+    .toggle-btn {
+        @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[720deg]
+    }
+
+
+
+}
+@theme {
+    --animate-wiggle: wiggle 1s  ;
+    @keyframes wiggle {
+
+      0% {
+        transform: translateY(25%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0%);
+        opacity: 1;
+      }
+    }
+  }
